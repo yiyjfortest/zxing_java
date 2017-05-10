@@ -4,7 +4,28 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-applet/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-detect-face/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-executable/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-javafx-fxml/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-javafx/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-live-streaming/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-manycams/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-motiondetector/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-onejar/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-painter/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-qrcode/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-swt-awt/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-transformer/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-video-recording/pom.xml" />
+        <option value="$PROJECT_DIR$/../webcam-capture-examples/webcam-capture-websockets/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
