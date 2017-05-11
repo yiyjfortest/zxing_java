@@ -18,29 +18,26 @@ import java.util.concurrent.ThreadFactory;
 /**
  * Created by yijea on 2017/5/10 下午5:09.
  */
-public class WebcamQRCodeExample extends JFrame implements Runnable, ThreadFactory {
+public class WebcamQRCodeDecoderExample extends JFrame implements Runnable, ThreadFactory {
 
     private static final long serialVersionUID = 6441489157408381878L;
 
-    private Executor executor = Executors.newSingleThreadExecutor(this);
-
     private Webcam webcam = null;
-    private WebcamPanel panel = null;
     private JTextArea textarea = null;
 
-    public WebcamQRCodeExample() {
+    public WebcamQRCodeDecoderExample() {
         super();
 
         setLayout(new FlowLayout());
         setTitle("Read QR / Bar Code With Webcam");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         Dimension size = WebcamResolution.QVGA.getSize();
 
         webcam = Webcam.getWebcams().get(0);
         webcam.setViewSize(size);
 
-        panel = new WebcamPanel(webcam);
+        WebcamPanel panel = new WebcamPanel(webcam);
         panel.setPreferredSize(size);
 
         textarea = new JTextArea();
@@ -53,6 +50,7 @@ public class WebcamQRCodeExample extends JFrame implements Runnable, ThreadFacto
         pack();
         setVisible(true);
 
+        Executor executor = Executors.newSingleThreadExecutor(this);
         executor.execute(this);
     }
 
@@ -100,6 +98,6 @@ public class WebcamQRCodeExample extends JFrame implements Runnable, ThreadFacto
     }
 
     public static void main(String[] args) {
-        new WebcamQRCodeExample();
+        new WebcamQRCodeDecoderExample();
     }
 }
